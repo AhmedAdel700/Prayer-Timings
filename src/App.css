@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  direction: rtl;
+  font-family: "IBM Plex Sans Arabic", sans-serif !important;
+}
+body {
+  background-color: rgb(24 24 27);
+  color: rgb(161 161 170);
+}
+.main-content {
+  display: "flex";
+  justify-content: center;
+  width: "100vw";
+  margin-top: 4rem;
+}
+.MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+.MuiSvgIcon-root {
+  color: white !important;
+}
+.loading {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(161 161 170);
+}
+.prayer-stack {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prayer-stack > * {
+  flex: 1 0 18%; /* Adjust the width based on the number of items you want per row */
+  margin: 1rem 0.25rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .prayer-stack > * {
+    flex: 1 0 100%; /* Display items in a single column on smaller screens */
+  }
+}
